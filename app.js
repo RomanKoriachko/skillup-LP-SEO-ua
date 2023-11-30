@@ -93,11 +93,11 @@ function validatePhone(id, formSelector) {
     const inputWrapper = input.parentElement;
     const form = document.querySelector(formSelector);
     const errorMap = [
-        "Некорректный номер",
-        "Некоректный код страны",
-        "Мало символов",
-        "Слишком много символов",
-        "Некорректный номер",
+        "Некоректний номер",
+        "Некоректний код країни",
+        "Мало символів",
+        "Занадто багато символів",
+        "Некоректний номер",
     ];
 
     const iti = window.intlTelInput(input, {
@@ -122,7 +122,7 @@ function validatePhone(id, formSelector) {
         if (input.value.trim()) {
             if (iti.isValidNumber()) {
                 output.innerHTML =
-                    "Номер корректный, полный международный формат: " +
+                    "Номер коректний, повний міжнародний формат: " +
                     iti.getNumber();
                 output.classList.add("correct");
             } else {
