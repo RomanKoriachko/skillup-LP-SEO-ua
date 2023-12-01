@@ -18,10 +18,10 @@ for (let i = 0; i < registrationBtns.length; i++) {
 
 const aboutBtn = document.querySelector(".header-menu-item-about");
 const programBtn = document.querySelector(".header-menu-item-program");
-const introduceSectionBtn = document.querySelector(".introduce-btn");
 const coachesBtn = document.querySelector(".header-menu-item-coaches");
 const reviewBtn = document.querySelector(".header-menu-item-review");
 const contactsBtn = document.querySelector(".header-menu-item-contact");
+const introduceBtn = document.querySelector(".introduce-btn");
 
 const aboutSection = document.querySelector(".benefits-section");
 const programSection = document.querySelector(".cource-section");
@@ -35,13 +35,13 @@ aboutBtn.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
-programBtn.addEventListener("click", () => {
+introduceBtn.addEventListener("click", () => {
     window.scrollTo({
-        top: programSection.getBoundingClientRect().top + window.scrollY,
+        top: aboutSection.getBoundingClientRect().top + window.scrollY,
         behavior: "smooth",
     });
 });
-introduceSectionBtn.addEventListener("click", () => {
+programBtn.addEventListener("click", () => {
     window.scrollTo({
         top: programSection.getBoundingClientRect().top + window.scrollY,
         behavior: "smooth",
