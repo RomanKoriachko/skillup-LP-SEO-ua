@@ -181,6 +181,12 @@ body {
   align-items: center;
   gap: 15px;
 }
+.header .language-change .current-lang-link {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
 .header .language-change a {
   text-decoration: none;
   color: #1f1e28;
